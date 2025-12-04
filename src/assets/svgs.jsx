@@ -62,3 +62,24 @@ export const ArrowRight = (props) => (
     />
   </svg>
 );
+export const SearchArrow = (props) => (
+  <svg
+    {...props}
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M5.5625 10.375C8.22037 10.375 10.375 8.22037 10.375 5.5625C10.375 2.90463 8.22037 0.75 5.5625 0.75C2.90463 0.75 0.75 2.90463 0.75 5.5625C0.75 8.22037 2.90463 10.375 5.5625 10.375Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M9.0625 9.0625L12.5625 12.5625"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);

@@ -25,7 +25,7 @@ const TopBar = () => {
   const [selectedValues, setSelectedValues] = useState({});
 
   return (
-    <Container className="flex justify-end max-lg:gap-2">
+    <Container className="flex justify-end max-lg:gap-2 relative z-100 bg-accent-50">
       {TOPBAR_LINKS.map((link, i) => {
         const isOpen = openDropdown === i;
 

@@ -1,5 +1,5 @@
 export const sectionSpacing = Object.assign("lg:py-[60px] max-lg:py-[40px]", {
-  Hero: "lg:pt-[72px] mm-md-lg:pt-[50px] max-md:pt-6 lg:pb-[60px] max-lg:pb-9",
+  Hero: "lg:mt-10 max-lg:mt-7 lg:mb-[52px]",
   "xs.b": "lg:pb-[30px] max-lg:pb-6",
   lg: "lg:py-[120px] max-lg:py-10",
   md: "lg:py-[100px] max-lg:py-10",
@@ -9,7 +9,7 @@ export const sectionSpacing = Object.assign("lg:py-[60px] max-lg:py-[40px]", {
 
 export const textSize = {
   h1: {
-    md: "lg:text-[70px] max-lg:text-[50px]",
+    md: "lg:text-[36px] mm-md-lg:text-[32px] max-md:text-[18px]",
   },
   h2: {
     xs: "text-[28px]",
@@ -78,7 +78,7 @@ export const buttonSizes = {
 
 export const iconButtonVariants = {
   primary:
-    "bg-secondary-100 text-primary-100 hover:bg-accent-100 border-2 border-secondary-100 hover:text-secondary-100 hover:bg-transparent",
+    "bg-secondary-50 text-accent-50 hover:bg-accent-100 border-2 border-secondary-50 hover:border-dark-50 hover:bg-dark-50",
   secondary:
     "bg-accent-100 text-primary-100 hover:bg-transparent hover:text-accent-100 border-2 border-accent-100",
   outline:
@@ -87,7 +87,7 @@ export const iconButtonVariants = {
 
 export const iconButtonSizes = {
   xs: `lg:size-[30px] max-lg:size-[26px] ${textSize.p.xs}`,
-  sm: `lg:size-[35px] max-lg:size-[31px] ${textSize.p.sm}`,
+  sm: `p-1 ${textSize.p.sm}`,
   md: `lg:size-[45px] max-lg:size-[38px] ${textSize.p.md}`,
   lg: `lg:size-[50px] max-lg:size-[45px] ${textSize.p.lg}`,
   xl: `lg:size-[60px] max-lg:size-[50px] ${textSize.p.xl}`,
