@@ -34,7 +34,7 @@ const Hero = () => {
               </SwiperSlide>
             ))}
           </SwiperSlider>
-          <div className="absolute lg:top-1/2 left-1/2 lg:-translate-y-1/2 max-lg:bottom-4 -translate-x-1/2 max-w-[612px] w-full z-10 flex flex-col items-center justify-center text-center space-y-2 max-lg:px-4">
+          <div className="absolute lg:top-1/2 left-1/2 lg:-translate-y-1/2 max-lg:bottom-4 -translate-x-1/2 max-w-[612px] w-full z-10 flex flex-col items-center justify-center text-center max-lg:space-y-2 max-lg:px-4">
             <Text
               as="h1"
               size="md"

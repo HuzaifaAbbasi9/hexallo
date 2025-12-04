@@ -1,5 +1,5 @@
 export const sectionSpacing = Object.assign("lg:py-[60px] max-lg:py-[40px]", {
-  Hero: "lg:mt-10 max-lg:mt-7 lg:mb-[52px]",
+  Hero: "lg:mt-10 max-lg:mt-7 lg:mb-[90px]",
   "xs.b": "lg:pb-[30px] max-lg:pb-6",
   lg: "lg:py-[120px] max-lg:py-10",
   md: "lg:py-[100px] max-lg:py-10",
@@ -86,7 +86,7 @@ export const iconButtonVariants = {
 };
 
 export const iconButtonSizes = {
-  xs: `lg:size-[30px] max-lg:size-[26px] ${textSize.p.xs}`,
+  xs: `lg:size-[26px] max-lg:size-[24px] ${textSize.p.xs}`,
   sm: `p-1 ${textSize.p.sm}`,
   md: `lg:size-[45px] max-lg:size-[38px] ${textSize.p.md}`,
   lg: `lg:size-[50px] max-lg:size-[45px] ${textSize.p.lg}`,
