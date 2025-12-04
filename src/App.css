@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --primary-50: 33, 235, 199;
+  --primary-50: 72, 131, 249;
 
-  --dark-50: 15, 15, 15;
+  --dark-50: 0, 0, 0;
+  --dark-100: 47, 37, 29;
+  --dark-200: 60, 60, 60;
+
+  --light-50: 106, 106, 106;
+  --light-100: 242, 242, 242;
+  
+  --secondary-50:   174, 111, 40;
+  --secondary-100: 239, 201, 109;
 
   --accent-50: 255, 255, 255;
 
@@ -13,18 +21,16 @@
 
   --warning-50: 242, 175, 40;
 
-  --light-50: 126, 126, 126;
 
   --success-50: 13, 203, 66;
 
-  --secondary-50: 64, 255, 181;
   --body-font: 'Inter', sans-serif;
   --font-primary: 'Montserrat', sans-serif;
   /* --font-secondary: 'Nunito Sans', sans-serif; */
 }
 
 body {
-  @apply font-body bg-dark-100 text-accent-100;
+  @apply font-body;
 }
 
 input[type='number']::-webkit-inner-spin-button,

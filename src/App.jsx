@@ -1,11 +1,18 @@
+import ScrollToTop from '@/components/ui/ScrollToTop'
+import MainLayout from '@/layouts/MainLayout'
+import Home from '@/routes/Home'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <div className='text-3xl font-semibold bg-primary-50'>Hello</div>
-    </>
+    <MainLayout>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </MainLayout>
   )
 }
 
