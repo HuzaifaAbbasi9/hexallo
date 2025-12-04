@@ -1,10 +1,10 @@
 const breakpoints = {
-  xs: "450px",
-  sm: "555px",
-  md: "768px",
-  lg: "1024px",
-  xl: "1400px",
-  "2xl": "1500px",
+  xs: '450px',
+  sm: '555px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1400px',
+  '2xl': '1500px',
 };
 
 function generateScreenBreakpoints() {
@@ -21,11 +21,21 @@ function generateScreenBreakpoints() {
   });
 
   const ranges = [
-    ["xs", "sm"], ["xs", "md"], ["xs", "lg"], ["xs", "xl"], ["xs", "2xl"],
-    ["sm", "md"], ["sm", "lg"], ["sm", "xl"], ["sm", "2xl"],
-    ["md", "lg"], ["md", "xl"], ["md", "2xl"],
-    ["lg", "xl"], ["lg", "2xl"],
-    ["xl", "2xl"],
+    ['xs', 'sm'],
+    ['xs', 'md'],
+    ['xs', 'lg'],
+    ['xs', 'xl'],
+    ['xs', '2xl'],
+    ['sm', 'md'],
+    ['sm', 'lg'],
+    ['sm', 'xl'],
+    ['sm', '2xl'],
+    ['md', 'lg'],
+    ['md', 'xl'],
+    ['md', '2xl'],
+    ['lg', 'xl'],
+    ['lg', '2xl'],
+    ['xl', '2xl'],
   ];
 
   ranges.forEach(([min, max]) => {
@@ -48,7 +58,7 @@ const withOpacity = (cssVariable) => {
 };
 
 function generateColorPalette(colorName) {
-  const shades = [50 ,100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
+  const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950];
   return shades.reduce((acc, shade) => {
     acc[shade] = withOpacity(`${colorName}-${shade}`);
     return acc;
@@ -56,14 +66,14 @@ function generateColorPalette(colorName) {
 }
 
 const colorPalettes = [
-  "dark",
-  "light",
-  "primary",
-  "secondary",
-  "accent",
-  "danger",
-  "success",
-  "warning",
+  'dark',
+  'light',
+  'primary',
+  'secondary',
+  'accent',
+  'danger',
+  'success',
+  'warning',
 ];
 
 const colors = colorPalettes.reduce((acc, colorName) => {
@@ -72,24 +82,21 @@ const colors = colorPalettes.reduce((acc, colorName) => {
 }, {});
 
 const gradients = {
-  "gradient-primary-100":
-    "linear-gradient(90deg, rgb(var(--danger-100)) 0%, rgb(var(--danger-200)) 50%, rgb(var(--warning-100)) 100%)",
+  "gradients-100":
+    "linear-gradient(175.73deg, rgb(var(--dark-700) / 0) 33.72%, rgb(var(--light-600) / 0.4) 80.82%)",
 };
 
 export default {
-  content: [
-    "./app.html",
-    "./src/**/*.{html,js,ts,jsx,tsx,svelte,vue}",
-  ],
-  
+  content: ['./app.html', './src/**/*.{html,js,ts,jsx,tsx,svelte,vue}'],
+
   theme: {
     extend: {
       screens: generateScreenBreakpoints(),
 
       fontFamily: {
-        body: ["var(--body-font)", "system-ui", "sans-serif"],
-        primary: ["var(--font-primary)", "system-ui", "sans-serif"],
-        secondary: ["var(--font-secondary)", "system-ui", "sans-serif"],
+        body: ['var(--body-font)', 'system-ui', 'sans-serif'],
+        primary: ['var(--font-primary)', 'system-ui', 'sans-serif'],
+        secondary: ['var(--font-secondary)', 'system-ui', 'sans-serif'],
       },
 
       colors,
@@ -97,60 +104,55 @@ export default {
       backgroundImage: gradients,
 
       animation: {
-        "spin-slow": "spin 5s linear infinite",
+        'spin-slow': 'spin 5s linear infinite',
       },
 
-      keyframes: {
-      },
+      keyframes: {},
 
-      spacing: {
-      },
+      spacing: {},
 
       zIndex: {
-        1: "1",
-        2: "2",
-        3: "3",
-        60: "60",
-        70: "70",
-        80: "80",
-        90: "90",
-        100: "100",
+        1: '1',
+        2: '2',
+        3: '3',
+        60: '60',
+        70: '70',
+        80: '80',
+        90: '90',
+        100: '100',
       },
 
       borderRadius: {
-        "4xl": "2rem",
-        "5xl": "2.5rem",
+        '4xl': '2rem',
+        '5xl': '2.5rem',
       },
 
-      fontSize: {
-      },
+      fontSize: {},
 
-      boxShadow: {
-      },
+      boxShadow: {},
     },
 
     container: {
       center: true,
       padding: {
-        DEFAULT: "0.8125rem",
-        sm: "1rem",
-        md: "1.25rem",
-        lg: "1.5rem",
-        xl: "1.25rem",
-        "2xl": "1.5rem",
+        DEFAULT: '0.8125rem',
+        sm: '1rem',
+        md: '1.25rem',
+        lg: '1.5rem',
+        xl: '1.25rem',
+        '2xl': '1.5rem',
       },
       screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1440px",
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1440px',
       },
     },
   },
 
-  plugins: [
-  ],
+  plugins: [],
 
   future: {
     hoverOnlyWhenSupported: true,

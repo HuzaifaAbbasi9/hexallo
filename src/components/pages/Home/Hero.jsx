@@ -17,7 +17,7 @@ const Hero = () => {
             slidesPerView={1}
             loop={true}
             pagination={true}
-            className="lg:rounded-xl max-lg:rounded-md overflow-hidden !static [&_.swiper-pagination]:-bottom-8 [&_.swiper-pagination]:flex [&_.swiper-pagination]:items-center [&_.swiper-pagination]:justify-center [&_.swiper-pagination]:gap-3 [&_.swiper-pagination-bullet]:!mx-0 [&_.swiper-pagination-bullet]:lg:!size-3 [&_.swiper-pagination-bullet]:max-lg:!size-2 [&_.swiper-pagination-bullet]:!shrink-0 [&_.swiper-pagination-bullet]:bg-light-200 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet-active]:!bg-warning-50"
+            className="lg:rounded-xl max-lg:rounded-md overflow-hidden !static [&_.swiper-pagination]:lg:-bottom-8 [&_.swiper-pagination]:max-lg:-bottom-5 [&_.swiper-pagination]:flex [&_.swiper-pagination]:items-center [&_.swiper-pagination]:justify-center [&_.swiper-pagination]:lg:gap-3 [&_.swiper-pagination]:max-lg:gap-2 [&_.swiper-pagination-bullet]:!mx-0 [&_.swiper-pagination-bullet]:lg:!size-3 [&_.swiper-pagination-bullet]:max-lg:!size-2 [&_.swiper-pagination-bullet]:!shrink-0 [&_.swiper-pagination-bullet]:bg-light-200 [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet-active]:!bg-warning-50"
           >
             {[1, 2, 3, 4, 5].map((i) => (
               <SwiperSlide

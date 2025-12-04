@@ -1,5 +1,5 @@
 export const sectionSpacing = Object.assign("lg:py-[60px] max-lg:py-[40px]", {
-  Hero: "lg:mt-10 max-lg:mt-7 lg:mb-[90px]",
+  Hero: "lg:mt-10 max-lg:mt-7 lg:mb-[90px] max-lg:mb-8",
   "xs.b": "lg:pb-[30px] max-lg:pb-6",
   lg: "lg:py-[120px] max-lg:py-10",
   md: "lg:py-[100px] max-lg:py-10",

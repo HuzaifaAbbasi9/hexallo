@@ -293,5 +293,65 @@ export const UNMISSABLE_DATA = [
     description: 'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
   },
 ];
+export const EXCLUSIVES_DATA = [
+  {
+    image: 'images/exclusives-card-1.jpg',
+    title: 'Private Tours',
+    description: 'Your guide to the most happening events this weekend — from concerts to pop-ups.',
+    action: 'Explore Now',
+  },
+  {
+    image: 'images/exclusives-card-2.jpg',
+    title: 'Private Tours',
+    description: 'Your guide to the most happening events this weekend — from concerts to pop-ups.',
+    action: 'Explore Now',
+  },
+];
+export const FOR_YOU_DATA = [
+  {
+    image: 'images/for-you-1.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description: 'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
+  },
+  {
+    image: 'images/for-you-2.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description: 'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
+  },
+  {
+    image: 'images/for-you-3.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description: 'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
+  },
+  {
+    image: 'images/for-you-4.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description: 'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
+  },
+];
 
 

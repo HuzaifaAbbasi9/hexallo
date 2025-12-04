@@ -3,7 +3,7 @@ import IconButton from '@/components/ui/IconButton';
 import Image from '@/components/ui/Image';
 import Text from '@/components/ui/Text';
 
-const ProductCard = ({ item }) => {
+const ProductCard = ({ item, cardType }) => {
   return (
     <div className="bg-primary-100 transition-all duration-300 ease-linear hover:bg-primary-200 rounded-2xl p-2 shadow-[0px_24px_90px_rgba(var(--dark-400),0.22)] border-2 border-accent-50 group cursor-pointer h-fit">
       <div className="relative">
@@ -40,7 +40,7 @@ const ProductCard = ({ item }) => {
             size="xs"
             className="font-primary text-light-600 leading-none flex items-center mb-1.5"
           >
-            <Calendar className="w-0 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
+            <Calendar className="lg:w-0 max-lg:size-[13px] max-lg:mr-2 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
             {item.date}
           </Text>
         )}
@@ -50,7 +50,7 @@ const ProductCard = ({ item }) => {
           size="xs"
           className="font-primary text-light-600 leading-none flex items-center"
         >
-          <Clock className="w-0 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
+          <Clock className="lg:w-0 max-lg:size-[13px] max-lg:mr-2 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
           {item.time}
         </Text>
         <Text
@@ -58,7 +58,7 @@ const ProductCard = ({ item }) => {
           size="xs"
           className="font-primary text-light-600 my-1.5 leading-none flex items-center"
         >
-          <Location className="w-0 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
+          <Location className="lg:w-0 max-lg:size-[13px] max-lg:mr-2 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
           {item.location}
         </Text>
         <Text
@@ -71,7 +71,7 @@ const ProductCard = ({ item }) => {
         <Text
           as="p"
           size="xs"
-          className="font-primary text-dark-600 leading-relaxed transition-all duration-300 ease-linear group-hover:max-h-28 line-clamp-3 max-h-0"
+          className="font-primary text-dark-600 leading-relaxed transition-all duration-300 ease-linear lg:group-hover:max-h-28 line-clamp-3 lg:max-h-0"
         >
           {item.description}
         </Text>
