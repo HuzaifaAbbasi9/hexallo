@@ -6,7 +6,7 @@ import { cardVariants } from '@/constants/theme';
 import { tw } from '@/utils/tw';
 
 /**
- * @typedef {'primary' | 'secondary' | 'outline' Variant
+ * @typedef {'primary' | 'secondary'} Variant
  */
 
 /**
@@ -15,17 +15,17 @@ import { tw } from '@/utils/tw';
  * }} props
  */
 
-const ProductCard = ({ item, variant='primary', className='' }) => {
+const ProductCard = ({ item, variant = 'primary', className = '' }) => {
   const base =
-    'transition-all duration-300 ease-linear rounded-2xl p-2 group cursor-pointer h-fit';
+    'transition-all duration-300 ease-linear rounded-2xl p-2 overflow-hidden group cursor-pointer h-fit';
   const variantClasses = cardVariants[variant] || '';
 
   return (
     <div className={tw(base, variantClasses, className)}>
-      <div className="relative">
+      <div className="relative rounded-xl overflow-hidden">
         <Image
           src={item.image}
-          className="w-full rounded-xl overflow-hidden object-cover aspect-[1.44]"
+          className="w-full overflow-hidden object-cover aspect-[1.44] transition-transform duration-300 ease-linear group-hover:scale-110"
         />
         {item.date && (
           <IconButton
@@ -36,16 +36,20 @@ const ProductCard = ({ item, variant='primary', className='' }) => {
           </IconButton>
         )}
       </div>
+      
       <div className="px-3 mt-[14px]">
-        <div className="py-1.5 px-2.5 rounded-lg bg-primary-200 grid place-items-center w-fit transition-all duration-300 ease-linear group-hover:bg-secondary-100">
-          <Text as="p" size="xs" className="font-primary text-dark-50">
-            {item.category}
-          </Text>
-        </div>
+        {item.category && (
+          <div className="py-1.5 px-2.5 rounded-lg bg-primary-200 grid place-items-center w-fit transition-all duration-300 ease-linear group-hover:bg-secondary-100">
+            <Text as="p" size="xs" className="font-primary text-dark-50">
+              {item.category}
+            </Text>
+          </div>
+        )}
+        
         <Text
           as="p"
           size="xs"
-          className="font-primary font-semibold text-dark-500 leading-loose my-1.5"
+          className="font-primary font-semibold leading-loose my-1.5 text-dark-500"
         >
           {item.title}
         </Text>
@@ -60,37 +64,48 @@ const ProductCard = ({ item, variant='primary', className='' }) => {
             {item.date}
           </Text>
         )}
-
-        <Text
-          as="p"
-          size="xs"
-          className="font-primary text-light-600 leading-none flex items-center"
-        >
-          <Clock className="lg:w-0 max-lg:size-[13px] max-lg:mr-2 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
-          {item.time}
-        </Text>
-        <Text
-          as="p"
-          size="xs"
-          className="font-primary text-light-600 my-1.5 leading-none flex items-center"
-        >
-          <Location className="lg:w-0 max-lg:size-[13px] max-lg:mr-2 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
-          {item.location}
-        </Text>
-        <Text
-          as="p"
-          size="xs"
-          className="font-primary text-light-600 leading-loose"
-        >
-          From <span className="font-bold text-dark-500">{item.price}</span>
-        </Text>
-        <Text
-          as="p"
-          size="xs"
-          className="font-primary text-dark-600 leading-relaxed transition-all duration-300 ease-linear lg:group-hover:max-h-28 line-clamp-3 lg:max-h-0"
-        >
-          {item.description}
-        </Text>
+        
+        {item.time && (
+          <Text
+            as="p"
+            size="xs"
+            className="font-primary text-light-600 leading-none flex items-center"
+          >
+            <Clock className="lg:w-0 max-lg:size-[13px] max-lg:mr-2 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
+            {item.time}
+          </Text>
+        )}
+        
+        {item.location && (
+          <Text
+            as="p"
+            size="xs"
+            className="font-primary text-light-600 my-1.5 leading-none flex items-center"
+          >
+            <Location className="lg:w-0 max-lg:size-[13px] max-lg:mr-2 transition-all duration-300 ease-linear group-hover:size-[13px] group-hover:mr-2" />
+            {item.location}
+          </Text>
+        )}
+        
+        {item.time && (
+          <Text
+            as="p"
+            size="xs"
+            className="font-primary text-light-600 leading-loose"
+          >
+            From <span className="font-bold text-dark-500">{item.price}</span>
+          </Text>
+        )}
+        
+        {item.description && (
+          <Text
+            as="p"
+            size="xs"
+            className="font-primary text-dark-600 leading-relaxed transition-all duration-300 ease-linear lg:group-hover:max-h-28 line-clamp-3 lg:max-h-0"
+          >
+            {item.description}
+          </Text>
+        )}
       </div>
     </div>
   );

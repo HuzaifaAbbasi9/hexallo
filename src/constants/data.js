@@ -353,5 +353,31 @@ export const FOR_YOU_DATA = [
     description: 'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
   },
 ];
+export const BUZZING_DESTINATIONS_DATA = [
+  {
+    image: 'images/buzzing-destinations-1.jpg',
+    title: "Kina Mountain",
+    checkIns: "1.2k check-ins this week",
+    description: "Your guide to the most happening events this weekend — from concerts to pop-ups.",
+  },
+  {
+    image: 'images/buzzing-destinations-2.jpg',
+    title: "Kina Mountain",
+    checkIns: "1.2k check-ins this week",
+    description: "Your guide to the most happening events this weekend — from concerts to pop-ups.",
+  },
+  {
+    image: 'images/buzzing-destinations-3.jpg',
+    title: "Kina Mountain",
+    checkIns: "1.2k check-ins this week",
+    description: "Your guide to the most happening events this weekend — from concerts to pop-ups.",
+  },
+  {
+    image: 'images/buzzing-destinations-4.jpg',
+    title: "Kina Mountain",
+    checkIns: "1.2k check-ins this week",
+    description: "Your guide to the most happening events this weekend — from concerts to pop-ups.",
+  },
+];
 
 

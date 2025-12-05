@@ -1,10 +1,11 @@
 import { ArrowRightSm } from '@/assets/svgs';
+import DestinationsCard from '@/components/common/DestinationsCard';
 import ProductCard from '@/components/common/ProductCard';
 import Container from '@/components/ui/Container';
 import Text from '@/components/ui/Text';
 
 /**
- * @typedef {'primary' | 'secondary' | 'outline' Variant
+ * @typedef {'primary' | 'secondary' | 'destinations' Variant
  */
 
 /**
@@ -12,7 +13,12 @@ import Text from '@/components/ui/Text';
  *   variant?: Variant,
  * }} props
  */
-const ProductSection = ({ title, items, className = '', variant='primary' }) => {
+const ProductSection = ({
+  title,
+  items,
+  className = '',
+  variant = 'primary',
+}) => {
   return (
     <section className={className}>
       <Container className={'lg:space-y-6 max-lg:space-y-4'}>
@@ -28,9 +34,13 @@ const ProductSection = ({ title, items, className = '', variant='primary' }) => 
         )}
         {items?.length && (
           <div className="grid lg:grid-cols-4 md-lg:grid-cols-3 xs-md:grid-cols-2 gap-2.5">
-            {items.map((item, index) => (
-              <ProductCard key={index} item={item} variant={variant} />
-            ))}
+            {items.map((item, index) =>
+              variant === 'destinations' ? (
+                <DestinationsCard key={index} item={item} />
+              ) : (
+                <ProductCard key={index} item={item} variant={variant} />
+              )
+            )}
           </div>
         )}
       </Container>
