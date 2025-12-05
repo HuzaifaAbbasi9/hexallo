@@ -1,4 +1,5 @@
 import DealsSection from "@/components/pages/Home/DealsSection";
+import DiscoverHiddenGems from "@/components/pages/Home/DiscoverHiddenGems";
 import ExclusivesSection from "@/components/pages/Home/ExclusivesSection";
 import Hero from "@/components/pages/Home/Hero";
 import ProductSection from "@/components/pages/Home/ProductSection";
@@ -15,6 +16,8 @@ const HomePage = () => {
       <ProductSection items={FOR_YOU_DATA} title="For you" variant="secondary" />
       <ProductSection items={BUZZING_DESTINATIONS_DATA} title="Buzzing Destinations" className='lg:my-[100px] max-lg:my-14' variant="destinations" />
       <DealsSection />
+      {/* <ProductSection items={BUZZING_DESTINATIONS_DATA} title="Discover Hidden Gems" className='lg:my-[100px] max-lg:my-14' variant="destinations" /> */}
+      <DiscoverHiddenGems />
     </>
   );
 };

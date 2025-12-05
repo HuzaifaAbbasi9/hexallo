@@ -457,3 +457,33 @@ export const DEALS_DATA = [
     discountLabel: 'OFF',
   },
 ];
+export const HIDDEN_GEMS_DATA = [
+  {
+    id: 1,
+    image: 'images/hidden-gems-1.jpg',
+    title: 'The Secret Garden Café',
+    location: 'Napa',
+    description: 'Hidden courtyard serving organic brunch & live music evenings.',
+  },
+  {
+    id: 2,
+    image: 'images/hidden-gems-2.jpg',
+    title: "Napa's Underground Jazz",
+    location: 'Accra',
+    description: 'Vintage cellar turned into an intimate live stages.',
+  },
+  {
+    id: 3,
+    image: 'images/hidden-gems-3.jpg',
+    title: 'Sky Hammock Trail',
+    location: 'Bali',
+    description: 'Swing over the valley — a serene thrill far from crowds',
+  },
+  {
+    id: 4,
+    image: 'images/hidden-gems-4.jpg',
+    title: 'Sky Hammock Trail',
+    location: 'Bali',
+    description: 'Swing over the valley — a serene thrill far from crowds',
+  },
+];
