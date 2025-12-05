@@ -23,7 +23,7 @@ const DiscoverHiddenGems = () => {
               className="lg:rounded-2xl max-lg:rounded-xl overflow-hidden relative group"
             >
               <Image src={item.image} className="h-[361px] w-full object-cover aspect-[136.492/15]" />
-              <div className="absolute bottom-0 left-0 lg:py-4 lg:px-7 max-lg:p-3 bg-dark-500/50 z-1 w-full text-accent-50 translate-y-full transition-transform duration-300 ease-linear group-hover:translate-y-0">
+              <div className="absolute bottom-0 left-0 lg:py-4 lg:px-7 max-lg:p-3 bg-dark-500/50 z-1 w-full text-accent-50 lg:translate-y-full transition-transform duration-300 ease-linear group-hover:lg:translate-y-0">
                 <div className="space-y-1.5">
                   <Text as="p" size="sm" className="font-bold leading-none">
                     {item.title}

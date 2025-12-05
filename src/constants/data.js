@@ -463,7 +463,8 @@ export const HIDDEN_GEMS_DATA = [
     image: 'images/hidden-gems-1.jpg',
     title: 'The Secret Garden Café',
     location: 'Napa',
-    description: 'Hidden courtyard serving organic brunch & live music evenings.',
+    description:
+      'Hidden courtyard serving organic brunch & live music evenings.',
   },
   {
     id: 2,
@@ -485,5 +486,132 @@ export const HIDDEN_GEMS_DATA = [
     title: 'Sky Hammock Trail',
     location: 'Bali',
     description: 'Swing over the valley — a serene thrill far from crowds',
+  },
+];
+export const EXPLORE_GHANA_DATA = [
+  [
+    {
+      id: 1,
+      image: 'images/explore-ghana-1.jpg',
+      rating: 3.5,
+      title: 'Events',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[313px]',
+    },
+    {
+      id: 2,
+      image: 'images/explore-ghana-2.png',
+      rating: 3.5,
+      ratingBlack: true,
+      title: 'Activities',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[460px]',
+    },
+    {
+      id: 3,
+      image: 'images/explore-ghana-3.jpg',
+      rating: 3.5,
+      ratingBlack: true,
+      title: 'Restaurants',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[531px]',
+    },
+  ],
+  [
+    {
+      id: 4,
+      image: 'images/explore-ghana-4.png',
+      rating: 3.5,
+      title: 'Tours',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[713px]',
+    },
+    {
+      id: 5,
+      image: 'images/explore-ghana-5.png',
+      rating: 3.5,
+      ratingBlack: true,
+      title: 'Services',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[609px]',
+    },
+  ],
+  [
+    {
+      id: 6,
+      image: 'images/explore-ghana-6.png',
+      rating: 3.5,
+      title: 'Destinations',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[400px]',
+    },
+    {
+      id: 7,
+      image: 'images/explore-ghana-7.jpg',
+      rating: 3.5,
+      title: 'Places',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[316px]',
+    },
+    {
+      id: 8,
+      image: 'images/explore-ghana-8.jpg',
+      rating: 3.5,
+      ratingBlack: true,
+      title: 'Accommodations',
+      subtitle: 'Explore',
+      className: 'lg:max-w-[591px]',
+    },
+  ],
+];
+
+export const GHANA_TOP_TEN_DATA = [
+  {
+    image: 'images/ghana-top-ten-1.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
+  },
+  {
+    image: 'images/ghana-top-ten-2.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
+  },
+  {
+    image: 'images/ghana-top-ten-3.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
+  },
+  {
+    image: 'images/ghana-top-ten-4.jpg',
+    category: 'Lounge',
+    title: 'DJ Liv North Live',
+    rating: 4.8,
+    date: 'Wed, 5th Dec',
+    time: '10:30 PM - 12:30 PM',
+    location: 'NewYork City',
+    price: 'USD 89',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
   },
 ];

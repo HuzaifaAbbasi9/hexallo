@@ -1,4 +1,4 @@
-import { Calendar, Clock, Heart, Location } from '@/assets/svgs';
+import { Calendar, Clock, Heart, Location, Star } from '@/assets/svgs';
 import IconButton from '@/components/ui/IconButton';
 import Image from '@/components/ui/Image';
 import Text from '@/components/ui/Text';
@@ -36,7 +36,7 @@ const ProductCard = ({ item, variant = 'primary', className = '' }) => {
           </IconButton>
         )}
       </div>
-      
+
       <div className="px-3 mt-[14px]">
         {item.category && (
           <div className="py-1.5 px-2.5 rounded-lg bg-primary-200 grid place-items-center w-fit transition-all duration-300 ease-linear group-hover:bg-secondary-100">
@@ -45,14 +45,23 @@ const ProductCard = ({ item, variant = 'primary', className = '' }) => {
             </Text>
           </div>
         )}
-        
-        <Text
-          as="p"
-          size="xs"
-          className="font-primary font-semibold leading-loose my-1.5 text-dark-500"
-        >
-          {item.title}
-        </Text>
+        <div className="flex items-center gap-4">
+          <Text
+            as="p"
+            size="xs"
+            className="font-primary font-semibold leading-loose my-1.5 text-dark-500 flex-1"
+          >
+            {item.title}
+          </Text>
+          {item.rating && (
+            <div className="flex items-center gap-1.5">
+              <Star className="size-2" />
+              <Text as="h6" size="xs" className="text-light-600 leading-none font-medium">
+                {item.rating}
+              </Text>
+            </div>
+          )}
+        </div>
 
         {item.date && (
           <Text
@@ -64,7 +73,7 @@ const ProductCard = ({ item, variant = 'primary', className = '' }) => {
             {item.date}
           </Text>
         )}
-        
+
         {item.time && (
           <Text
             as="p"
@@ -75,7 +84,7 @@ const ProductCard = ({ item, variant = 'primary', className = '' }) => {
             {item.time}
           </Text>
         )}
-        
+
         {item.location && (
           <Text
             as="p"
@@ -86,7 +95,7 @@ const ProductCard = ({ item, variant = 'primary', className = '' }) => {
             {item.location}
           </Text>
         )}
-        
+
         {item.time && (
           <Text
             as="p"
@@ -96,7 +105,7 @@ const ProductCard = ({ item, variant = 'primary', className = '' }) => {
             From <span className="font-bold text-dark-500">{item.price}</span>
           </Text>
         )}
-        
+
         {item.description && (
           <Text
             as="p"

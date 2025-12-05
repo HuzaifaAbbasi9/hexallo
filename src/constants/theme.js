@@ -40,7 +40,7 @@ export const textSize = {
     xl: 'text-[28px]',
   },
   h6: {
-    xs: 'lg:text-[22px] max-lg:text-[20px]',
+    xs: 'lg:text-[10px] max-lg:text-[9px]',
     sm: 'text-[18px]',
     md: 'text-[20px]',
     lg: 'text-[22px]',

@@ -24,8 +24,8 @@ const ExclusivesSection = ({ className }) => {
               className="lg:rounded-2xl max-lg:rounded-xl overflow-hidden relative group"
             >
               <Image src={item.image} className="size-full object-cover" />
-              <div className="absolute bottom-0 left-0 lg:py-4 lg:px-7 max-lg:p-3 bg-dark-500/50 z-1 w-full text-accent-50 translate-y-full transition-transform duration-300 ease-linear group-hover:translate-y-0">
-                <div className="max-w-[531px] space-y-3">
+              <div className="absolute bottom-0 left-0 lg:py-4 lg:px-7 max-lg:p-3 bg-dark-500/50 z-1 w-full text-accent-50 lg:translate-y-full transition-transform duration-300 ease-linear group-hover:lg:translate-y-0">
+                <div className="max-w-[531px] lg:space-y-3 max-lg:space-y-1.5">
                   <Text as="p" size="md" className="font-bold leading-none">
                     {item.title}
                   </Text>
