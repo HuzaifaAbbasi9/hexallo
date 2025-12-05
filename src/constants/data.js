@@ -615,3 +615,38 @@ export const GHANA_TOP_TEN_DATA = [
       'Lorem ipsum dolor sit amet consectetur. Cras a faucibus arcu bibendum pellentesque convallis eu ornare.',
   },
 ];
+
+export const GLOBAL_HIGHLIGHTS_DATA = [
+  {
+    id: 1,
+    image: 'images/global-highlights-1.jpg',
+    title: 'Paris',
+    location: 'Paris',
+    description: 'Culinary nights & art walks',
+    action: 'Explore Now'
+  },
+  {
+    id: 2,
+    image: 'images/global-highlights-2.jpg',
+    title: 'Tokyo',
+    location: 'Tokyo',
+    description: 'Hidden rooftop bars & pop-up events',
+    action: 'Explore Now'
+  },
+  {
+    id: 3,
+    image: 'images/global-highlights-3.jpg',
+    title: 'New York',
+    location: 'New York',
+    description: 'Adventure escapes & wine tours',
+    action: 'Explore Now'
+  },
+  {
+    id: 4,
+    image: 'images/global-highlights-4.jpg',
+    title: 'New York',
+    location: 'New York',
+    description: 'Adventure escapes & wine tours',
+    action: 'Explore Now'
+  },
+];
