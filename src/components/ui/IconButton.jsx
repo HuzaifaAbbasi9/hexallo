@@ -2,7 +2,7 @@ import { iconButtonSizes, iconButtonVariants } from "@/constants/theme";
 import { tw } from "@/utils/tw";
 
 /**
- * @typedef {'primary' | 'secondary' | 'outline'} Variant
+ * @typedef {'primary' | 'secondary' | 'outline', | 'ghost'} Variant
  * @typedef {'xs' |'sm' | 'md' | 'lg' | 'xl' } Size
  */
 

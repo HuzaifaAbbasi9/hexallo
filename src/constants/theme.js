@@ -59,13 +59,21 @@ export const buttonVariants = {
   primary:
     'bg-secondary-100 text-primary-100 hover:bg-accent-100 border-2 border-secondary-100 hover:text-secondary-100 hover:bg-transparent',
   secondary:
-    'bg-accent-100 text-primary-100 hover:bg-transparent hover:text-accent-100 border-2 border-accent-100',
+    'bg-dark-500 text-accent-50 hover:bg-transparent hover:text-accent-100 border-2 border-dark-500',
   outline:
     'border-2 border-primary-200 text-primary-200 hover:bg-primary-200 hover:text-accent-100',
   tertiary:
     'border-2 border-secondary-200 bg-accent-100 text-secondary-200 hover:bg-secondary-200 hover:text-accent-100',
   info: 'border-2 border-secondary-200 bg-secondary-200 text-primary-100 hover:bg-primary-100 hover:text-accent-100 hover:border-primary-100',
   ghost: 'text-primary-100',
+};
+
+export const buttonSizes = {
+  xs: `px-2 py-1 ${textSize.p.xs} rounded-full`,
+  sm: `lg:px-[17px] max-lg:px-3.5 lg:py-[10px] max-lg:py-2 ${textSize.p.xs} rounded-full`,
+  md: `lg:px-[10.5px] max-lg:px-[10.5px] lg:py-[10.5px] max-lg:py-[9px] ${textSize.p.md} rounded-full`,
+  lg: `lg:px-[23.5px] max-lg:px-[17.5px] lg:py-[13.5px] max-lg:py-[10.5px] ${textSize.p.lg} rounded-full`,
+  xl: `px-6 py-3 ${textSize.p.xl} rounded-full`,
 };
 
 export const cardVariants = {
@@ -75,14 +83,6 @@ export const cardVariants = {
     'bg-accent-50 hover:bg-primary-100 hover:border-primary-200/5 shadow-[4px_4px_26px_0px_rgba(var(--dark-100),0.1)] border border-dark-50/5',
 };
 
-export const buttonSizes = {
-  xs: `px-2 py-1 ${textSize.p.xs} rounded-full`,
-  sm: `px-2.5 py-2.5 ${textSize.p.sm} rounded-full`,
-  md: `lg:px-[10.5px] max-lg:px-[10.5px] lg:py-[10.5px] max-lg:py-[9px] ${textSize.p.md} rounded-full`,
-  lg: `lg:px-[23.5px] max-lg:px-[17.5px] lg:py-[13.5px] max-lg:py-[10.5px] ${textSize.p.lg} rounded-full`,
-  xl: `px-6 py-3 ${textSize.p.xl} rounded-full`,
-};
-
 export const iconButtonVariants = {
   primary:
     'bg-secondary-50 text-accent-50 hover:bg-accent-100 border-2 border-secondary-50 hover:border-dark-50 hover:bg-dark-50',
@@ -90,12 +90,14 @@ export const iconButtonVariants = {
     'bg-accent-100 text-primary-100 hover:bg-transparent hover:text-accent-100 border-2 border-accent-100',
   outline:
     'border-2 border-secondary-100 text-secondary-100 hover:bg-secondary-100 hover:text-secondary-200',
+  ghost:
+    'border-2 border-accent-50 bg-accent-50 text-light-800 hover:bg-accent-50/70 hover:border-accent-50/10 hover:text-accent-100',
 };
 
 export const iconButtonSizes = {
   xs: `lg:size-[26px] max-lg:size-[24px] ${textSize.p.xs}`,
   sm: `p-1 ${textSize.p.sm}`,
-  md: `lg:size-[45px] max-lg:size-[38px] ${textSize.p.md}`,
+  md: `lg:size-[36px] max-lg:size-[32px] ${textSize.p.md}`,
   lg: `lg:size-[50px] max-lg:size-[45px] ${textSize.p.lg}`,
   xl: `lg:size-[60px] max-lg:size-[50px] ${textSize.p.xl}`,
 };

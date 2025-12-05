@@ -81,13 +81,8 @@ const colors = colorPalettes.reduce((acc, colorName) => {
   return acc;
 }, {});
 
-const gradients = {
-  "gradients-100":
-    "linear-gradient(175.73deg, rgb(var(--dark-700) / 0) 33.72%, rgb(var(--light-600) / 0.4) 80.82%)",
-};
-
 export default {
-  content: ['./app.html', './src/**/*.{html,js,ts,jsx,tsx,svelte,vue}'],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
   theme: {
     extend: {
@@ -101,7 +96,19 @@ export default {
 
       colors,
 
-      backgroundImage: gradients,
+      // backgroundImage: {
+      //   'gradient-100':
+      //     'linear-gradient(175.73deg, rgba(var(--dark-700), 0) 33.72%, rgba(var(--light-600), 0.4) 80.82%)',
+      //   'gradient-200':
+      //     'linear-gradient(180deg, rgba(0, 0, 0, 0) 44.15%, rgba(255, 110, 131, 0.2) 95.1%)',
+      // },
+
+      backgroundImage: (theme) => ({
+        'gradient-100':
+          'linear-gradient(175.73deg, transparent 33.72%, rgba(var(--light-600), 0.4) 80.82%)',
+        'gradient-200':
+          'linear-gradient(180deg, rgba(0, 0, 0, 0) 44.15%, rgba(255, 110, 131, 0.2) 95.1%)',
+      }),
 
       animation: {
         'spin-slow': 'spin 5s linear infinite',
