@@ -1,4 +1,4 @@
-import { Globe } from '@/assets/svgs';
+import { Facebook, Globe, Instagram, Linkedin, Whatsapp, X } from '@/assets/svgs';
 
 export const TOPBAR_LINKS = [
   { key: 'Events Calendar' },
@@ -623,7 +623,7 @@ export const GLOBAL_HIGHLIGHTS_DATA = [
     title: 'Paris',
     location: 'Paris',
     description: 'Culinary nights & art walks',
-    action: 'Explore Now'
+    action: 'Explore Now',
   },
   {
     id: 2,
@@ -631,7 +631,7 @@ export const GLOBAL_HIGHLIGHTS_DATA = [
     title: 'Tokyo',
     location: 'Tokyo',
     description: 'Hidden rooftop bars & pop-up events',
-    action: 'Explore Now'
+    action: 'Explore Now',
   },
   {
     id: 3,
@@ -639,7 +639,7 @@ export const GLOBAL_HIGHLIGHTS_DATA = [
     title: 'New York',
     location: 'New York',
     description: 'Adventure escapes & wine tours',
-    action: 'Explore Now'
+    action: 'Explore Now',
   },
   {
     id: 4,
@@ -647,6 +647,62 @@ export const GLOBAL_HIGHLIGHTS_DATA = [
     title: 'New York',
     location: 'New York',
     description: 'Adventure escapes & wine tours',
-    action: 'Explore Now'
+    action: 'Explore Now',
+  },
+];
+
+export const FOOTER_LINKS = [
+  {
+    id: 1,
+    label: 'Privacy policy',
+    href: '/privacy-policy',
+  },
+  {
+    id: 2,
+    label: 'Terms of service',
+    href: '/terms-of-service',
+  },
+  {
+    id: 3,
+    label: 'Contact us',
+    href: '/contact-us',
+  },
+];
+
+export const FOOTER_SOCIAL_LINKS = [
+  {
+    id: 1,
+    name: 'X',
+    icon: X,
+    href: 'https://x.com/',
+    ariaLabel: 'Follow us on X'
+  },
+  {
+    id: 2,
+    name: 'LinkedIn',
+    icon: Linkedin,
+    href: 'https://linkedin.com/',
+    ariaLabel: 'Connect with us on LinkedIn'
+  },
+  {
+    id: 3,
+    name: 'Facebook',
+    icon: Facebook,
+    href: 'https://facebook.com/',
+    ariaLabel: 'Like us on Facebook'
+  },
+  {
+    id: 4,
+    name: 'Instagram',
+    icon: Instagram,
+    href: 'https://instagram.com/',
+    ariaLabel: 'Follow us on Instagram'
+  },
+  {
+    id: 5,
+    name: 'WhatsApp',
+    icon: Whatsapp,
+    href: 'https://wa.me/1234567890',
+    ariaLabel: 'Chat with us on WhatsApp'
   },
 ];

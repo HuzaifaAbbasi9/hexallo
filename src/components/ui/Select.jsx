@@ -39,7 +39,7 @@ export function SelectButton({ onClick, children, className }) {
       type="button"
       onClick={onClick}
       className={tw(
-        `focus:ring-none relative flex w-full flex-1 items-center gap-2 rounded-lg border-none bg-accent-100 py-[10px] pl-10 pr-[15px] text-light-100 focus:outline-none rtl:pl-[15px] rtl:pr-10 ${textSize.p.xl}`,
+        `focus:ring-none relative flex w-full flex-1 items-center gap-2 rounded-lg border-none bg-accent-50 py-[10px] pl-10 pr-[15px] text-light-100 focus:outline-none rtl:pl-[15px] rtl:pr-10 ${textSize.p.xl}`,
         className
       )}
     >
