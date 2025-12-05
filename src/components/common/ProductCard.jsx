@@ -2,10 +2,26 @@ import { Calendar, Clock, Heart, Location } from '@/assets/svgs';
 import IconButton from '@/components/ui/IconButton';
 import Image from '@/components/ui/Image';
 import Text from '@/components/ui/Text';
+import { cardVariants } from '@/constants/theme';
+import { tw } from '@/utils/tw';
 
-const ProductCard = ({ item, cardType }) => {
+/**
+ * @typedef {'primary' | 'secondary' | 'outline' Variant
+ */
+
+/**
+ * @param {{
+ *   variant?: Variant,
+ * }} props
+ */
+
+const ProductCard = ({ item, variant='primary', className='' }) => {
+  const base =
+    'transition-all duration-300 ease-linear rounded-2xl p-2 group cursor-pointer h-fit';
+  const variantClasses = cardVariants[variant] || '';
+
   return (
-    <div className="bg-primary-100 transition-all duration-300 ease-linear hover:bg-primary-200 rounded-2xl p-2 shadow-[0px_24px_90px_rgba(var(--dark-400),0.22)] border-2 border-accent-50 group cursor-pointer h-fit">
+    <div className={tw(base, variantClasses, className)}>
       <div className="relative">
         <Image
           src={item.image}

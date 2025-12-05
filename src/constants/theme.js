@@ -68,6 +68,15 @@ export const buttonVariants = {
   ghost: "text-primary-100",
 };
 
+// box-shadow: 4px 4px 26px 0px rgba(0, 0, 0, 0.1);
+
+export const cardVariants = {
+  primary:
+    "bg-primary-100 hover:bg-primary-200 shadow-[0px_24px_90px_rgba(var(--dark-400),0.22)] border-2 border-accent-50",
+  secondary:
+    "bg-accent-50 hover:bg-primary-100 hover:border-primary-200/5 shadow-[4px_4px_26px_0px_rgba(var(--dark-100),0.1)] border border-dark-50/5",
+};
+
 export const buttonSizes = {
   xs: `px-2 py-1 ${textSize.p.xs} rounded-full`,
   sm: `px-2.5 py-2.5 ${textSize.p.sm} rounded-full`,

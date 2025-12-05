@@ -11,7 +11,7 @@ const HomePage = () => {
       <ProductSection items={HOT_WEEK_DATA} title="Hot This Week" className="lg:my-[106px] max-lg:my-14"  />
       <ProductSection items={UNMISSABLE_DATA} title="Unmissable" />
       <ExclusivesSection className={'lg:my-[106px] max-lg:my-14'}  />
-      <ProductSection items={FOR_YOU_DATA} title="For you" />
+      <ProductSection items={FOR_YOU_DATA} title="For you" variant="secondary" />
     </>
   );
 };
