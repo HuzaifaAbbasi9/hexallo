@@ -59,7 +59,7 @@ export const buttonVariants = {
   primary:
     'bg-secondary-100 text-primary-100 hover:bg-accent-100 border-2 border-secondary-100 hover:text-secondary-100 hover:bg-transparent',
   secondary:
-    'bg-dark-500 text-accent-50 hover:bg-transparent hover:text-accent-100 border-2 border-dark-500',
+    'bg-dark-500 text-accent-50 hover:bg-transparent hover:text-dark-500 border-2 border-dark-500',
   outline:
     'border-2 border-primary-200 text-primary-200 hover:bg-primary-200 hover:text-accent-100',
   tertiary:
